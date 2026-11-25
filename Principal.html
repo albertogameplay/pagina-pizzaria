@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fast Pizza</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: rgb(247, 247, 144);
+        margin: 0;
+      }
+
+      h2 {
+        text-align: center;
+        color: rgb(210, 16, 16);
+      }
+
+      h3,
+      p {
+        color: black;
+      }
+
+      .navegaçao {
+        background-color: rgb(210, 16, 16);
+        display: flex;
+        height: 195px;
+        flex-direction: column;
+      }
+
+      .logo {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        align-self: flex-start;
+      }
+
+      .botao {
+        background-color: rgb(210, 16, 16);
+        color: rgb(247, 247, 144);
+        border: none;
+        text-decoration: underline;
+        font-size: 25px;
+        cursor: pointer;
+        margin-bottom: 15px;
+        margin-left: 50px;
+      }
+
+      .botoes {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        width: 100%;
+      }
+
+      .pizzas {
+        background-color: white;
+        border-radius: 5%;
+        width: 70%;
+        margin: 20px auto;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .pizza {
+        width: 33.33%;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 380px;
+      }
+
+      .pizza img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .milkshekes {
+        background-color: white;
+        border-radius: 5%;
+        width: 70%;
+        margin: 20px auto;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .milksheke {
+        width: 33.33%;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 350px;
+      }
+
+      .milksheke img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .Bebidas {
+        background-color: white;
+        border-radius: 5%;
+        width: 70%;
+        margin: 20px auto;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .Bebida {
+        width: 33.33%;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 350px;
+      }
+
+      .Bebida img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+      .Adicionais {
+        background-color: white;
+        border-radius: 5%;
+        width: 70%;
+        margin: 20px auto;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .Adicional {
+        width: 33.33%;
+        box-sizing: border-box;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 350px;
+      }
+
+      .Adicional img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+
+      .pizza button,
+      .milksheke button,
+      .Bebida button,
+      .Adicional button {
+        margin-top: auto;
+        margin-bottom: 8px;
+      }
+
+      .rodape {
+        height: 100px;
+        background-color: rgb(210, 16, 16);
+        display: flex;
+        align-items: center;
+      }
+      .Comprar {
+        background-color: red;
+        border-color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="navegaçao">
+      <img
+        src="./imagens/Logo Pizzaria Fast Pizza.png"
+        alt="Logo Fast Pizza"
+        class="logo"
+      />
+
+      <div class="botoes">
+        <a href="./Login.html">
+          <button class="botao">Login</button>
+        </a>
+
+        <a href="./Historico.html">
+          <button class="botao">Historico</button>
+        </a>
+
+        <a href="#pizzas">
+          <button class="botao">Pizza</button>
+        </a>
+
+        <a href="#milkshakes">
+          <button class="botao">Milk shake</button>
+        </a>
+
+        <a href="#bebidas">
+          <button class="botao">Bebidas</button>
+        </a>
+
+        <a href="#Adicionais">
+          <button class="botao">Adicionais</button>
+        </a>
+        <a href="./sacola.html">
+          <button class="botao">Sacola</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="pizzas" id="pizzas">
+      <div class="pizza">
+        <img src="./imagens/pizza1.png" alt="Pizza de Calabresa" />
+        <h3>Pizza de Calabresa</h3>
+        <p>Queijo mussarela, calabresa e cebola.</p>
+        <p>R$ 35,00</p>
+        <a href="sacola.html">
+          <button class="btn btn-danger">Adicionar à sacola</button>
+        </a>
+        <a href="./paginas de produtos/pizza de calabresa copy.html">
+          <button class="btn btn-danger Comprar">Comprar</button>
+        </a>
+      </div>
+
+      <div class="pizza">
+        <img src="./imagens/pizza2.jpg" alt="Pizza de Frango com Catupiry" />
+        <h3>Pizza de Frango com Catupiry</h3>
+        <p>Frango desfiado, queijo e catupiry cremoso.</p>
+        <p>R$ 32,00</p>
+        <a href="sacola.html">
+          <button class="btn btn-danger">Adicionar à sacola</button>
+        </a>
+        <a href="./paginas de produtos/pizza de frango.html">
+          <button class="btn btn-danger Comprar">Comprar</button>
+        </a>
+      </div>
+
+      <div class="pizza">
+        <img src="./imagens/pizza3.jpg" alt="Pizza quatro queijos" />
+        <h3>Pizza quatro queijos</h3>
+        <p>Mussarela, parmesão, provolone e gorgonzola.</p>
+        <p>R$ 40,00</p>
+        <a href="sacola.html">
+          <button class="btn btn-danger">Adicionar à sacola</button>
+        </a>
+        <a href="./paginas de produtos/pizza quatro queijos.html">
+          <button class="btn btn-danger Comprar">Comprar</button>
+        </a>
+      </div>
+
+      <div class="pizza">
+        <img src="./imagens/pizza4.webp" alt="Pizza Portuguesa" />
+        <h3>Pizza Portuguesa</h3>
+        <p>Presunto, queijo, ovo, cebola, tomate e azeitona.</p>
+        <p>R$ 42,00</p>
+        <a href="sacola.html">
+          <button class="btn btn-danger">Adicionar à sacola</button>
+        </a>
+        <a href="./paginas de produtos/pizza portuguesa.html">
+          <button class="btn btn-danger Comprar">Comprar</button>
+        </a>
+      </div>
+
+      <div class="pizza">
+        <img src="./imagens/pizza5.jpg" alt="Pizza sertaneja" />
+        <h3>Pizza sertaneja</h3>
+        <p>Carne moida,queijo mussarela e cebola</p>
+        <p>R$ 45,00</p>
+        <a href="sacola.html">
+          <button class="btn btn-danger">Adicionar à sacola</button>
+        </a>
+        <a href="./paginas de produtos/pizza sertaneja.html">
+          <button class="btn btn-danger Comprar">Comprar</button>
+        </a>
+      </div>
+
+      <div class="pizza">
+        <img src="./imagens/pizza6.jpg" alt="Pizza de Chocolate" />
+        <h3>Pizza de Chocolate</h3>
+        <p>Chocolate cremoso com granulado por cima.</p>
+        <p>R$ 38,00</p>
+        <a href="sacola.html">
+          <button class="btn btn-danger">Adicionar à sacola</button>
+        </a>
+        <a href="./paginas de produtos/pizza de chocolate.html">
+          <button class="btn btn-danger Comprar">Comprar</button>
+        </a>
+      </div>
+    </div>
+
+    <h2>milkshakes</h2>
+
+    <div class="milkshekes" id="milkshakes">
+      <div class="milksheke">
+        <img
+          src="./imagens/milksheke_chocolate.png"
+          alt="Milk-shake de Chocolate"
+          style="border-radius: none"
+        />
+        <h3>Milk-shake de Chocolate</h3>
+        <p>Milk-shake cremoso com sabor de chocolate.</p>
+        <p>R$ 8,00</p>
+        <a href="sacola.html">
+          <button class="btn btn-danger">Adicionar à sacola</button>
+        </a>
+        <a href="./paginas de produtos/milksheke de chocolate.html">
+          <button class="btn btn-danger Comprar">Comprar</button>
+        </a>
+      </div>
+
+      <div class="milksheke">
+        <img
+          src="./imagens/milksheke_morango.png"
+          alt="Milk-shake de Morango"
+        />
+        <h3>Milk-shake de Morango</h3>
+        <p>Milk-shake muito cremoso com sabor de morango.</p>
+        <p>R$ 8,00</p>
+        <a href="sacola.html">
+          <button class="btn btn-danger">Adicionar à sacola</button>
+        </a>
+        <a href="./paginas de produtos/milksheke de morango.html">
+          <button class="btn btn-danger Comprar">Comprar</button>
+        </a>
+      </div>
+
+      <div class="milksheke">
+        <img
+          src="./imagens/milksheke_leite_condensado.png"
+          alt="Milk-shake de Leite Condensado"
+        />
+        <h3>Milk-shake de Leite Condensado</h3>
+        <p>Milk-shake doce e cremoso com leite condensado.</p>
+        <p>R$ 8,00</p>
+        <a href="sacola.html">
+          <button class="btn btn-danger">Adicionar à sacola</button>
+        </a>
+        <a href="./paginas de produtos/milksheke de leite condensado.html">
+          <button class="btn btn-danger Comprar">Comprar</button>
+        </a>
+      </div>
+    </div>
+
+    <h2>Bebidas</h2>
+
+    <div class="Bebidas" id="bebidas">
+      <div class="Bebida">
+        <img src="./imagens/coca.png" alt="Coca-Cola" />
+        <h3>Coca-Cola</h3>
+        <p>Refrigerante de cola.</p>
+        <p>R$ 10,00</p>
+        <a href="sacola.html">
+          <button class="btn btn-danger">Adicionar à sacola</button>
+        </a>
+        <a href="./paginas de produtos/coca.html">
+          <button class="btn btn-danger Comprar">Comprar</button>
+        </a>
+      </div>
+
+      <div class="Bebida">
+        <img src="./imagens/fanta_uva.webp" alt="Fanta Uva" />
+        <h3>Fanta Uva</h3>
+        <p>Refrigerante sabor uva.</p>
+        <p>R$ 10,00</p>
+        <a href="sacola.html">
+          <button class="btn btn-danger">Adicionar à sacola</button>
+        </a>
+        <a href="./paginas de produtos/fanta.html">
+          <button class="btn btn-danger Comprar">Comprar</button>
+        </a>
+      </div>
+
+      <div class="Bebida">
+        <img src="./imagens/pepsi.webp" alt="Pepsi" />
+        <h3>Pepsi</h3>
+        <p>Refrigerante de cola.</p>
+        <p>R$ 10,00</p>
+        <a href="sacola.html">
+          <button class="btn btn-danger">Adicionar à sacola</button>
+        </a>
+        <a href="./paginas de produtos/pepsi.html">
+          <button class="btn btn-danger Comprar">Comprar</button>
+        </a>
+      </div>
+    </div>
+
+    <h2>Adicionais</h2>
+
+    <div class="Adicionais" id="Adicionais">
+      <div class="Adicional">
+        <img src="./imagens/Batata_frita.webp" alt="Batata-frita" />
+        <h3>Batata frita</h3>
+        <p>Batata frita no oleo com molho de acompanhamento.</p>
+        <p>R$ 15,00</p>
+        <a href="sacola.html">
+          <button class="btn btn-danger">Adicionar à sacola</button>
+        </a>
+        <a href="./paginas de produtos/batata frita.html">
+          <button class="btn btn-danger Comprar">Comprar</button>
+        </a>
+      </div>
+
+      <div class="Adicional">
+        <img src="./imagens/Nugget.jpg" alt="Nugget" />
+        <h3>Nugget</h3>
+        <p>Frango frito com molho de acompanhamento.</p>
+        <p>R$ 20,00</p>
+        <a href="sacola.html">
+          <button class="btn btn-danger">Adicionar à sacola</button>
+        </a>
+        <a href="./paginas de produtos/nuggets.html">
+          <button class="btn btn-danger Comprar">Comprar</button>
+        </a>
+      </div>
+
+      <div class="Adicional">
+        <img src="./imagens/buschettas.jpeg" alt="Pepsi" />
+        <h3>Bruschettas</h3>
+        <p>Pão rústico,tomates,alho,azeite,sal e pimenta.</p>
+        <p>R$ 12,00</p>
+        <a href="sacola.html">
+          <button class="btn btn-danger">Adicionar à sacola</button>
+        </a>
+        <a href="./paginas de produtos/buschettas.html">
+          <button class="btn btn-danger Comprar">Comprar</button>
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      <div class="rodape">
+        <a href="./formulario.html">
+          <button class="btn">Preencha a um formulario</button>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

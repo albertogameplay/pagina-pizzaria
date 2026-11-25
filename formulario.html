@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Questionário</title>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: rgb(247, 247, 144);
+        margin: 0;
+      }
+      p {
+        color: black;
+
+        font-weight: 400;
+      }
+
+      h2 {
+        text-align: center;
+        color: rgb(210, 16, 16);
+      }
+
+      h2,
+      p {
+        color: rgb(16, 15, 15);
+      }
+      .navegaçao {
+        background-color: rgb(210, 16, 16);
+        display: flex;
+        height: 195px;
+        flex-direction: column;
+      }
+
+      .logo {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        align-self: flex-start;
+      }
+
+      .botao {
+        background-color: rgb(210, 16, 16);
+        color: rgb(247, 247, 144);
+        border: none;
+        text-decoration: underline;
+        font-size: 25px;
+        cursor: pointer;
+        margin-bottom: 15px;
+        margin-left: 50px;
+      }
+      .botoes {
+        display: flex;
+        justify-content: left;
+        gap: 40px;
+        width: 100%;
+      }
+      .titulo {
+        background-color: rgb(210, 16, 16);
+        color: rgb(247, 247, 144);
+        border: none;
+        text-decoration: underline;
+        font-size: 25px;
+        cursor: pointer;
+        margin-bottom: 15px;
+        margin-left: 450px;
+      }
+      .avaliação {
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="navegaçao">
+      <img
+        src="./imagens/Logo Pizzaria Fast Pizza.png"
+        alt="Logo Fast Pizza"
+        class="logo"
+      />
+
+      <div class="botoes">
+        <a href="./Principal.html">
+          <button class="botao">voltar</button>
+        </a>
+        <button class="titulo">Pagina de avaliação</button>
+      </div>
+    </div>
+
+    <div class="avaliação">
+      <form>
+        <p>Deixe sua avaliaçao:</p>
+
+        <input type="radio" name="gostou" value="sim" /> 5 estrelas
+        <input type="radio" name="gostou" value="nao" /> 4 estrelas
+        <input type="radio" name="gostou" value="nao" /> 3 estrelas
+        <input type="radio" name="gostou" value="nao" /> 2 estrelas
+        <input type="radio" name="gostou" value="nao" /> 1 estrela
+
+        <p>O que você achou do visual do site?</p>
+
+        <select>
+          <option>Ótimo</option>
+          <option>Bom</option>
+          <option>Regular</option>
+          <option>Ruim</option>
+        </select>
+
+        <p>Deixe sua opinião:</p>
+
+        <textarea rows="5" cols="40"></textarea>
+
+        <br /><br />
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </div>
+  </body>
+</html>

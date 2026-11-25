@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Historico de compras</title>
+
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: rgb(247, 247, 144);
+        margin: 0;
+      }
+
+      h2 {
+        text-align: center;
+        color: rgb(210, 16, 16);
+      }
+
+      h3,
+      p {
+        color: black;
+        text-align: center;
+      }
+
+      .navegaçao {
+        background-color: rgb(210, 16, 16);
+        display: flex;
+        height: 195px;
+        flex-direction: column;
+      }
+
+      .logo {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        align-self: flex-start;
+      }
+
+      .botao {
+        background-color: rgb(210, 16, 16);
+        color: rgb(247, 247, 144);
+        border: none;
+        text-decoration: underline;
+        font-size: 25px;
+        cursor: pointer;
+        margin-bottom: 15px;
+        margin-left: 50px;
+      }
+
+      .botoes {
+        display: flex;
+        justify-content: left;
+        gap: 40px;
+        width: 100%;
+      }
+
+      .titulo {
+        background-color: rgb(210, 16, 16);
+        color: rgb(247, 247, 144);
+        border: none;
+        font-size: 25px;
+        margin-bottom: 15px;
+        margin-left: 450px;
+        text-decoration: rgb(247, 247, 144);
+      }
+
+      .produtos {
+        background-color: white;
+        border-radius: 5%;
+        width: 70%;
+        margin: 20px auto;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .produto {
+        width: 33.33%;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 300px;
+      }
+
+      .produto img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="navegaçao">
+      <img
+        src="./imagens/Logo Pizzaria Fast Pizza.png"
+        alt="Logo Fast Pizza"
+        class="logo"
+      />
+
+      <div class="botoes">
+        <a href="./Principal.html">
+          <button class="botao">Voltar</button>
+        </a>
+
+        <button class="titulo">Historico de compras</button>
+      </div>
+    </div>
+
+    <div class="produtos">
+      <div class="produto">
+        <img src="./imagens/pizza1.png" alt="Pizza de Calabresa" />
+
+        <h3>Pizza de Calabresa</h3>
+        <p>Queijo mussarela, calabresa e cebola.</p>
+        <p>R$ 35,00</p>
+      </div>
+
+      <div class="produto">
+        <img src="./imagens/coca.png" alt="Nome do produto" />
+
+        <h3>Nome do produto</h3>
+        <p>Refrigerante de cola.</p>
+        <p>R$ 10,00</p>
+      </div>
+
+      <div class="produto">
+        <img
+          src="./imagens/milksheke_leite_condensado.png"
+          alt="Nome do produto"
+        />
+
+        <h3>Nome do produto</h3>
+        <p>Milk-shake doce e cremoso com leite condensado.</p>
+        <p>R$ 8,00</p>
+      </div>
+    </div>
+  </body>
+</html>
